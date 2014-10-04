@@ -8,9 +8,8 @@ body {
 }
 
 #main-description {
-	margin-left: 53%;
-	margin-top: 10px;
-	margin-bottom: 14px;
+	margin-top: 20%;
+	margin-bottom: 12%;
 	padding-bottom: 60px;
 }
 
@@ -114,8 +113,8 @@ a {
 }
 
 #blog {
-	margin-top: 13px; 
 	background-color: #A37E58;
+	height: 350px;
 	font-family: "Lobster";
 	color: black;
 }
@@ -167,11 +166,13 @@ h1 {
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 35px;
 	color: white;
 }
 
-p, nav {
+p {
 	font-family: 'Questrial', sans-serif;
 	color: white;
+	padding-top: 30px;
+	margin-bottom: -15px;
 }
