@@ -1,0 +1,177 @@
+body {
+	background-color: #FFD2CB;
+}
+
+#main-picture {
+	padding-top: 1px;
+	background-color: black;
+}
+
+#main-description {
+	margin-left: 53%;
+	margin-top: 10px;
+	margin-bottom: 14px;
+	padding-bottom: 60px;
+}
+
+#main-nav, #main-footer {
+	width: 100%;
+	margin : 0px 10px 10px -8px;
+	padding : 0px 1em 0px 0;
+	list-style-type : none;
+	text-align: center;
+	position: relative;
+	margin-top: 10px;
+	background-color: #E86786;
+}
+
+#main-nav li {
+	display: inline;
+	margin-right: 35px;
+}
+
+#main-nav a {
+	color: white;
+}
+
+.navbar-default {
+	background-color: #E86786;
+	border-color: #E86786;
+	padding-left: 11%;
+	margin-top: -2px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+
+.form-control {
+	height: 35px;
+	padding: 14px 20px;
+	font-size: 15px;
+	line-height: 1.428571;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 0px solid #ccc;
+	border-radius: 0%;
+}
+
+#main-footer a {
+	color: white;
+}
+#main-footer li {
+	display: inline;
+	margin-right: 200px;
+}
+
+#main-picture {
+	background-image: url(images/annie-chung.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.blog {
+    background: white;
+    box-shadow: 3px 4px 17px -3px;
+    display: inline-block;
+}
+div.article {
+    background: white;
+    box-shadow: 3px 4px 17px -3px;
+    display: inline-block;
+}
+
+li {
+	font-size: 26px;
+}
+
+
+h1, h2, li {
+	color: #281916;
+	font-family: 'Lobster', cursive;
+}
+
+
+h1 {
+	font-size: 60px;
+	color: white;
+	margin-bottom: 1px;
+}
+
+h2 {
+	font-size: 25px;
+	color: white;
+	margin-top: 1px;
+}
+
+p, nav {
+	font-family: 'Questrial', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+#blog {
+	margin-top: 13px; 
+	background-color: #A37E58;
+	font-family: "Lobster";
+	color: black;
+}
+
+#blog h2 {
+	padding-top: 13px;
+	text-align: center;
+}
+
+#moi {
+	margin-top: 13px; 
+	margin-bottom: 40px; 
+	font-family: "Lobster";
+	color: black;
+}
+
+#moi h2 {
+	padding-top: 13px;
+	text-align: center;
+}
+
+.box-me {
+	background-color: white;
+	margin-left: 1%;
+	padding: 5%;
+	box-shadow: 3px 4px 17px -3px;
+}
+
+.texte {
+	color: black;
+	margin: 10px 0px 0px 0px;
+}
+
+.btn-default {
+	color: rgb(63, 57, 57);
+	background-color: #FBCFCF;
+	border-radius: 0px;
+	margin-left: 2px;
+}
+
+.col-md-offset-4 {
+	margin-left: 33.33333333%;
+	margin-top: 6%;
+}
+
+h1 {
+	font-size: 60px;
+	color: white;
+}
+
+h2 {
+	font-size: 25px;
+	color: white;
+}
+
+p, nav {
+	font-family: 'Questrial', sans-serif;
+	color: white;
+}
