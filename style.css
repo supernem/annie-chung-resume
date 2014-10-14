@@ -7,12 +7,6 @@ body {
 	background-color: black;
 }
 
-#main-description {
-	margin-top: 20%;
-	margin-bottom: 12%;
-	padding-bottom: 60px;
-}
-
 #main-nav  {
 	width: 100%;
 	margin : 0px 10px 10px -8px;
@@ -27,12 +21,17 @@ body {
 #main-footer {
 	width: 100%;
 	margin : 0px 10px 10px 10px;
-	padding : 10px 1em 100px 0;
+	padding : 10px 1em 5px 0;
 	list-style-type : none;
 	text-align: center;
 	position: relative;
 	margin-top: 10px;
 	background-color: #E86786;
+}
+
+ul, ol {
+	margin-top: -3px;
+	margin-bottom: 4px;
 }
 
 #main-nav li {
@@ -75,10 +74,37 @@ body {
 	margin-right: 45px;
 }
 
-#main-picture {
-	background-image: url(images/annie-chung.jpg);
-    background-repeat: no-repeat;
-	background-position: center;
+@media(min-width: 768px) {
+	#main-picture {
+		background-image: url(images/annie-chung.jpg);
+	    background-repeat: no-repeat;
+		background-position: bottom;
+		margin-top: 1%;
+	}
+}
+
+@media(max-width: 767px) {
+	#main-picture {
+		background: linear-gradient(#161614,black);
+		margin-top: 48px;
+
+	}
+}
+
+@media(min-width: 768px) {
+	#main-description {
+		margin-top: 16%;
+		margin-bottom: 12%;
+		padding-bottom: 60px;
+	}
+}
+
+@media(max-width: 767px) {
+	#main-description {
+		margin-top: 16%;
+		margin-bottom: 12%;
+		padding-bottom: 18px;
+	}
 }
 
 div.blog {
@@ -102,11 +128,25 @@ h1, h2, li {
 	font-family: 'Lobster', cursive;
 }
 
-
-h1 {
+@media(max-width: 767px) {
+	#main-picture h1 {
+	font-size: 40px;
+	color: white; 
+	}
+	#main-picture h2 {
+	font-size: 21px;
+	color: white; 
+	}
+}
+@media(min-width: 768px) {
+	#main-picture h1 {
 	font-size: 60px;
 	color: white;
-	margin-bottom: 1px;
+	}
+	#main-picture h2 {
+	font-size: 35px;
+	color: white; 
+	}
 }
 
 h2 {
@@ -125,7 +165,7 @@ a {
 
 #blog {
 	background-color: #A37E58;
-	height: 435px;
+	height: 475px;
 	font-family: "Lobster";
 	color: black;
 }
@@ -136,7 +176,7 @@ a {
 }
 
 #moi {
-	margin-top: 13px; 
+	margin-top: -2px; 
 	margin-bottom: 40px; 
 	font-family: "Lobster";
 	color: black;
@@ -154,9 +194,22 @@ a {
 	box-shadow: 3px 4px 17px -3px;
 }
 
+.cercle {
+	background-color: #A37E58;
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
+	display: block;
+	margin-left: 119px;
+}
+
+#i class {
+	background-color: #FFD2CB
+}
+
 .texte {
 	color: black;
-	margin: 10px 0px 0px 0px;
+	margin: -5px 0px px 0px;
 }
 
 .btn-default {
@@ -185,7 +238,7 @@ p {
 	font-family: 'Questrial', sans-serif;
 	color: white;
 	padding-top: 30px;
-	margin-bottom: -15px;
+	margin-bottom: 0px;
 }
 
 .subtitle {
@@ -250,4 +303,74 @@ h3 i {
 	margin: 12px 0px 0px 170px;
 	padding: 8px 15px 8px 15px;
 	font-size: 20px;
+}
+
+.dateArticle {
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	background-color: grey;
+	background-color: rgba(204,204,204,0.6);
+	top: 60%;
+	left: 3px;
+	margin: -63px 0px 0px 17px
+}
+
+.dateArticle .jour {
+	color: white;
+	font-size: 33px;
+	font-weight: bold;
+	font-family: arial;
+	margin: -5px 5px 0px 5px;
+	float: left;
+}
+
+.dateArticle .mois {
+	color: white;
+	font-size: 15px;
+	float: left;
+	font-weight: bold;
+	font-family: arial;
+	margin: 2px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.dateArticle .annee {
+	color: white;
+	font-size: 12px;
+	float: left;
+	font-weight: bold;
+	font-family: arial;
+	margin: -6px 0px 0px 0px;
+}
+
+.texte {
+	font-size: 16px;
+}
+
+.fa-graduation-cap {
+	font-size: 3em;
+	margin: 21px 0px 0px 14px;
+	color: white;
+	margin-right: -43px
+}
+
+.fa-list-alt {
+	font-size: 3em;
+	margin: 21px 0px 0px 19px;
+	color: white;
+}
+
+.fa-cog {
+	font-size: 3em;
+	margin: 21px 0px 0px 22px;
+	color: white;
+}
+
+.box-me img {
+	margin: -84px 0px -15px -28px;
+}
+
+section>.container {
+	overflow: hidden;
 }
