@@ -1,54 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<title>Annie Chung Online Marketing</title>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        		<li><a href="#">Accueil</a></li> 
-        		<li><a href="#">Mon expérience</a></li> 
-        		<li><a href="#">Mes missions</a></li>
-        		<li><a href="#">Mes compétences</a></li>
-        		<li><a href="#">Mon blog</a></li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Je recherche">
-        </div>
-        <button type="submit" class="btn btn-default">Valider</button>
-      </form>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<?php get_header(); ?>
+
     <section id="main-picture">
-    	<img src="images/mini-annie.jpg" class="visible-xs visible-sm img-responsive">
+    	<img src="<?php bloginfo('template_directory'); ?>/images/mini-annie.jpg" class="visible-xs visible-sm img-responsive">
 		<div class="container-fluid">
 			 <div class="row">
 			    <div class="col-md-offset-6 col-md-6 col-xs-12">
 			    	<div id="main-description">
-						<h1>Annie Chung</h1>
+						<h1><?php bloginfo('name'); ?></h1>
 						<h2>Online Marketing et Social Media</h2>
 						<p>Since my childhood, I have been fascinated by all which is creative like drawing, creation, photo and graphic design but mainly new technology like Internet. Actually, it's a nonstop advanced and innovation way, I'm still impressed by what we can learn every single day! That's why, I decided to focus my studies in Online Marketing in a business school in Lille (France) where I had the opportunity to get an internship in several companies like NetBooster, Gooster, Kaufman & Broad...Since january, I've been studying an Advanced Diploma in Online Marketing and Social Media at EF International School in San Francisco</p>
 					</div>
@@ -64,7 +22,7 @@
   			<div class="col-md-6">
   				<div class="box-me">
 					<h3>TEDx s'installe au Théâtre du Chatelet</h3>
-					<img src="images/tedx-paris-2014.jpg">
+					<img src="<?php bloginfo('template_directory'); ?>/images/tedx-paris-2014.jpg">
 					<span class="dateArticle"><span class="jour">05</span><span class="mois">Oct</span><span class="annee">2014</span></span>
 					<p class="texte">TEDx s'installe au Théâtre du Chatelet</p>
 					<div class="btn-group">
@@ -75,7 +33,7 @@
   			<div class="col-md-6">
   				<div class="box-me">
 					<h3>Mon expérience avec les Google Glass</h3>
-					<img src="images/google-glass.jpg">
+					<img src="<?php bloginfo('template_directory'); ?>/images/google-glass.jpg">
 					<span class="dateArticle"><span class="jour">17</span><span class="mois">Mai</span><span class="annee">2014</span></span>
 					<p class="texte">Mon expérience avec les Google Glass</p>
 					<div class="btn-group">
@@ -140,22 +98,4 @@
 <!-- ajouter ici les 2 derniers posts du blog -->
 </aside>
 
-<footer>
-<nav id="main-footer">
-	<ul>
-		<li><a href="#"><i class="fa fa-phone"></i>
-		<li>06 43 23 76 05</li>
-		<li><a href="#"><i class="fa fa-envelope-o"></i>
-		<li>anniechung.web@gmail.com</li>
-		<li><a href="#"><i class="fa fa-plus"></i></li>
-		<li><a href="#"><i class="fa fa-linkedin-square"></i></li>
-		<li><a href="#"><i class="fa fa-facebook-square"></i>
-		<li><a href="#"><i class="fa fa-google-plus-square"></i>
-	</ul>
-</nav>
-</footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="global.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>

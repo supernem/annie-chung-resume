@@ -1,3 +1,15 @@
+/*
+Theme Name: Annie Chung Resume
+Theme URI: http://something.com
+Author: Annie Chung
+Author URI: http://me-myself-and-i.com
+Description: This is my, being humble, awesome theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, genius, talented
+*/
+
 body {
 	background-color: #FFD2CB;
 }
@@ -47,7 +59,7 @@ ul, ol {
 	background-color: #E86786;
 	border-color: #E86786;
 	padding-left: 11%;
-	margin-top: -2px;
+	margin-top: 32px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -74,7 +86,7 @@ ul, ol {
 	margin-right: 45px;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 769px) {
 	#main-picture {
 		background-image: url(images/annie-chung.jpg);
 	    background-repeat: no-repeat;
@@ -373,4 +385,20 @@ h3 i {
 
 section>.container {
 	overflow: hidden;
+}
+
+.box-me {
+    -webkit-transition: all 0.1s ease; /* Safari and Chrome */
+    -moz-transition: all 0.1s ease; /* Firefox */
+    -ms-transition: all 0.1s ease; /* IE 9 */
+    -o-transition: all 0.1s ease; /* Opera */
+    transition: all 0.1s ease;
+}
+
+.box-me:hover {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
 }
