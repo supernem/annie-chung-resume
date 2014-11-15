@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 
     <section id="main-picture">
@@ -13,27 +14,34 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</header>
 
 <section id="blog">
 	<div class="container">
 		<h2><p class="fancy span"><span>Mon blog web</span></p></h2>
  		<div class="row">
- 		<?php if (have_posts()) : ?>
- 		   <?php while (have_posts()) : the_post(); ?>
- 		    	<div class="col-md-6">
- 		    		<div class="box-me">
- 		    			<h3><?php the_title(); ?></h3>
- 		    			<?php the_post_thumbnail('full', array("class" => "img-responsive")); ?>
- 		    			<span class="dateArticle"><span class="jour"><?php the_time('j'); ?></span><span class="mois"><?php the_time('M'); ?></span><span class="annee"><?php the_time('Y'); ?></span></span>
-						<p class="texte"><?php the_title();?></p>
-						<div class="btn-group">
-	  						<a href="<?php echo get_permalink(); ?>"><button type="button" class="btn-default2">En savoir plus</button></a>
-						</div>
- 		    		</div>
- 		    	</div>
- 		    <?php endwhile; ?>
- 		 <?php endif; ?>
+  			<div class="col-md-6">
+  				<div class="box-me">
+					<h3>TEDx s'installe au Théâtre du Chatelet</h3>
+					<img src="<?php bloginfo('template_directory'); ?>/images/tedx-paris-2014.jpg">
+					<span class="dateArticle"><span class="jour">05</span><span class="mois">Oct</span><span class="annee">2014</span></span>
+					<p class="texte">TEDx s'installe au Théâtre du Chatelet</p>
+					<div class="btn-group">
+  					<button type="button" class="btn-default2">En savoir plus</button>
+					</div>
+				</div>
+			</div>
+  			<div class="col-md-6">
+  				<div class="box-me">
+					<h3>Mon expérience avec les Google Glass</h3>
+					<img src="<?php bloginfo('template_directory'); ?>/images/google-glass.jpg">
+					<span class="dateArticle"><span class="jour">17</span><span class="mois">Mai</span><span class="annee">2014</span></span>
+					<p class="texte">Mon expérience avec les Google Glass</p>
+					<div class="btn-group">
+  					<button type="button" class="btn-default2">En savoir plus</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
